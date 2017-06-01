@@ -1,0 +1,274 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,iput{margin:0;padding:0;}
+body{font-size:13px;font-family: "微软雅黑";}
+img{border:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;color: black;}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+input{
+    background:none;
+    outline:none;
+    border:0px;
+}
+.clearfix{zoom:1;}
+
+body{background-color: rgba(224, 231, 234, 1);}
+
+.main{width: 100%;height: 100%}
+/*通用样式*/
+.biaoqian{
+    width:92% ;
+    height: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e7ea;
+}
+.biaoqian span ,.biaoqian a{
+    line-height: 45px;
+    height: 45px;
+}
+.contain_bg{
+    width: 100%;
+    background: white;
+    margin-top: 10px;
+    height: 747px;
+}
+.zp_list{
+    width: 92%;
+    margin: 0 auto;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    border-right:1px solid #e0e7ea;
+    border-bottom:1px solid #e0e7ea;
+}
+table th{
+    color :#d4d9de;
+    border-left:1px solid #e0e7ea;
+    border-top:1px solid #e0e7ea;
+    height: 34px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e7ea;
+}
+table td{
+    height: 45px;
+    border-left:1px solid #e0e7ea;
+    border-bottom:1px solid #e0e7ea;
+    cursor: pointer;
+}
+/*通用样式end*/
+/*index*/
+
+.head_bg{
+    width: 100%;
+    height: 65px;
+    background: url("../img/head/head_bg.png") no-repeat;
+}
+.head_detail{
+    width: 50%;
+    min-width: 620px;
+    margin: 0 auto;
+    height: 100%;
+}
+h1{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 55px;
+    font-size: 26px;
+}
+.head_person{
+    width:160px ;
+    height: 30px;
+    margin-top: 20px;
+    display: table;
+}
+.head_person p{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.head_detail .line{
+    width: 2px;
+    height: 30px;
+    display: inline-block;
+    background: black;
+    vertical-align: middle;
+    display: table-cell;
+}
+/*作者中心内容部分*/
+
+.contain{
+    width:60% ;
+    margin: 20px auto;
+    position: relative;
+}
+aside{
+    width: 16%;
+    height: 800px;
+    min-width:150px ;
+    background: white;
+    display: inline-block;
+}
+active1{
+    background:#a1b7c9;
+}
+aside dd{
+    background:#f0f3f5;
+    display: none;
+}
+
+aside dt,aside dd li{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 56px;
+    cursor: pointer;
+}
+aside dt{
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 16px;
+    width: 100%;
+}
+aside dl .zzzq,aside dl .zpxg,aside dl .zpgl,aside dl .srmx{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+aside dl .zzzq{
+    background: url("../img/aside/home.png") center left no-repeat;
+
+}
+aside dl .zpxg{
+    background: url("../img/aside/read.png") center left no-repeat;
+
+}
+aside dl .zpgl{
+    background: url("../img/aside/write.png") center left no-repeat;
+
+}
+aside dl .srmx{
+      background: url("../img/aside/zzzq.png") center left no-repeat;
+
+}
+section{
+    margin-left:20px ;
+    display: inline-block;
+    position: absolute;
+    width: 82%;
+    min-width: 700px;
+}
+.contain .author_person,.contain .author_gggl{
+    width: 100%;
+    height: 115px;
+    background: white;
+}
+.contain .author_announcement{
+    width: 100%;
+    height: 255px;
+    background: white;
+    margin-top: 10px;
+}
+.contain .author_anthology{
+    width: 100%;
+    height: 410px;
+    background: white;
+    margin-top: 10px;
+}
+.contain .author_tx{
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 42px;
+    vertical-align: middle;
+    margin-top: 18px;
+}
+.contain .author_name{
+    font-size: 16px;
+}
+.contain .author_new{
+    display: inline-block;
+    width: 66%;
+    vertical-align: middle;
+    height: 80px;
+    line-height: 46px;
+    margin-left: 10px;
+}
+.contain .author_fabu{
+    vertical-align: middle;
+}
+.author_announcement .gg_neirong {
+    width: 90%;
+    margin: 0 auto;
+}
+.author_announcement .gg_neirong span{
+    color:#909fa9;
+}
+.author_announcement .gg_neirong li{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e0e7ea;
+}
+
+/*作者中心内容部分end*/
+
+/*作者公告管理*/
+.contain_head{
+    width: 100%;
+    height: 43px;
+    background: white;
+}
+.contain_head a, .contain_head span{
+    height: 43px;
+    line-height: 43px;
+    color: #909fa9;
+}
+.contain_head .shouye{
+    margin-left: 30px;
+}
+.contain_gggl{
+    height: 747px!important;
+}
+.contain_gggl .gg_neirong li:first-child{
+    list-style: none;
+    color: #909fa9;
+}
+/*作者公告管理end*/
+/*消息管理*/
+.author_xx table th:first-child,.author_xx table td:first-child{
+    text-align: left;
+    padding-left: 10px;
+}
+.yidu{
+    background: url("../img/head/icon_remind.png") no-repeat;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+}
+.zp_list div{
+    padding:15px ;
+    background: #e0e7ea;
+    height: 20px;
+    line-height:20px ;
+}
+.zp_list .author_tz{
+    height: auto;
+}
+/*消息管理end*/
