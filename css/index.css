@@ -26,6 +26,18 @@ body{background-color: rgba(224, 231, 234, 1);}
 
 .main{width: 100%;height: 100%}
 /*通用样式*/
+aside a{
+    display: inline-block;
+    width: 100%;
+}
+.lf_active{
+    background:#a1b7c9;
+    color:white;
+}
+.lf_octive{
+     background:white;
+     color:black;
+ }
 .biaoqian{
     width:92% ;
     height: 45px;
