@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<style>
+.skxx_contain{
+    height: 860px!important;
+}
+.skxx .skxx_detail{
+    width: 70%;
+    margin: 0 auto;
+}
+.skxx .skxx_detail ul{
+    margin-top: 20px;
+}
+.skxx .skxx_detail ul li{
+    height: 45px;
+    list-style: none;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+.skxx .skxx_detail ul li span{
+    font-family: "黑体";
+    width: 100px;
+    display: inline-block;
+}
+.skxx .skxx_detail ul li input{
+    text-indent:2em;
+    width:360px ;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e0e7ea;
+}
+.skxx .skxx_detail ul .zl_save{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+    background: #3d474d;
+    color: white;
+}
+</style>
+<body>
+<div class="main">
+    <!--头部组合-->
+    <div class="head_bg">
+        <div class="head_detail">
+            <h1 class="fl">有乐-作者中心</h1>
+            <div class="head_person fr">
+                <div style=" vertical-align: middle;display: table-cell;width: 10px;height: 10px">
+                    <img src="img/head/__icon_u9.png" alt="" >
+                </div>
+                <p style="width: 36px;">通知</p>
+                <div style="display: table-cell;vertical-align: top;">
+                    <img src="img/head/icon_remind.png" alt="" >
+                </div>
+                <span></span>
+                <span class="line"></span>
+                <p style="width: 80px">踏雪无痕</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <aside>
+            <div></div>
+            <dl>
+                <dt><i class="zzzq"></i>作者专区</dt>
+                <dd>
+                    <ul>
+                        <li>作者中心</li>
+                        <li>公告管理</li>
+                        <li>消息管理</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="zpxg"></i>作品相关</dt>
+                <dd>
+                    <ul>
+                        <li>作品列表</li>
+                        <li>申请签约</li>
+                        <li>新增作品</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt> <i class="zpgl"></i>作品管理</dt>
+                <dd>
+                    <ul>
+                        <li>作品信息管理</li>
+                        <li>章节管理</li>
+                        <li>本书稿费</li>
+                        <li>书评管理</li>
+                        <li>更新字数统计</li>
+                        <li>申请福利</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="srmx"></i>收入明细</dt>
+                <dd>
+                    <ul>
+                        <li>作品收入</li>
+                        <li>我的稿费</li>
+                        <li>我的预付稿费</li>
+                        <li>我的收款资料</li>
+                    </ul>
+                </dd>
+            </dl>
+        </aside>
+        <section class="zpsr" style="display:none ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">收入明细</a>
+                <span>&gt;</span>
+                <span href="">作品收入</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span>作品收入</span>
+                    <select name="" id="" class="fr">
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <div>
+                    <p>1.以下收入数据仅作参考，时机收入以最后结算为准。</p>
+                    <p>2.每天下午5点后可查阅前一天的客户端收入。</p>
+                    <p>3.以下金额均为分成后您可得到的实际金额，。</p>
+                    <p>4.客户端收入按总收入的70%给你您分成。</p>
+                    <p>5.买断作品暂无数据。</p>
+                </div>
+                <div>选择年月：</div>
+                <div class="zp_list">
+
+                    <table>
+                        <tr>
+                            <th>日期</th>
+                            <th>书号</th>
+                            <th>书名</th>
+                            <th>PC站</th>
+                            <th>WAP站</th>
+                            <th>掌阅客户端</th>
+                            <th>道具收入</th>
+                            <th>收入总汇</th>
+                        </tr>
+                        <tr>
+                            <td>2017-05-01</td>
+                            <td>1</td>
+                            <td>修罗天帝</td>
+                            <td>15.98</td>
+                            <td>58.72</td>
+                            <td>247.90</td>
+                            <td>73.5</td>
+                            <td>396.1</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">月收入</td>
+                            <td>15.98</td>
+                            <td>58.72</td>
+                            <td>247.90</td>
+                            <td>73.5</td>
+                            <td>396.1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="wdgf" style="display: none">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">收入明细</a>
+                <span>&gt;</span>
+                <span href="">我的稿费</span>
+            </div>
+            <div class="contain_bg wdgf">
+                <div class="biaoqian">
+                    <span>我的稿费</span>
+                    <select name="" id="" class="fr">
+                        <option value="0">选择作品</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <div>
+                    <p>1.买断保底作品，除打赏外，其他一切福利均不享受。每月买断保底稿费以交稿量为准核算，具体稿费请与责编联系核对。保底作品转分成后，福利等同分成作品。</p>
+                    <p>2.如无特别说明，货币为人民币，单位为元。</p>
+                    <p>3.本月稿费将在次月5号前核算完毕，于次月20号汇款给作者，届时请查询，如有疑问请与编辑联系。</p>
+                </div>
+                <div>选择年月：</div>
+                <div class="zp_list">
+                    <h3>《修罗天帝》2017年1月稿酬</h3>
+                    <span>单位：元</span>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>书名</th>
+                                <td>修罗天帝</td>
+                            </tr>
+                            <tr>
+                                <th>订阅</th>
+                                <td>15.98</td>
+
+                            </tr>
+                            <tr>
+                                <th>买断/预付</th>
+                                <td>58.72</td>
+                            </tr>
+                            <tr>
+                                <th>渠道稿费</th>
+                                <td>247.90</td>
+                            </tr>
+                            <tr>
+                                <th>掌阅客户端</th>
+                                <td>73.5</td>
+
+                            </tr>
+                            <tr>
+                                <th>额外增加</th>
+                                <td>73.5</td>
+                            </tr>
+                            <tr>
+                                <th>累计以前未付款</th>
+                                <td>73.5</td>
+                            </tr>
+                        </tbody>
+<!--                        <tr>
+                            <td>签约性质</td>
+                            <td>道具收入</td>
+                            <td>全勤收入</td>
+                            <td>完本收入</td>
+                            <td>掌阅客户端打赏</td>
+                            <td>额外扣除</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>预付</td>
+                            <td>15.98</td>
+                            <td>58.72</td>
+                            <td>247.90</td>
+                            <td>73.5</td>
+                            <td>73.5</td>
+                            <td></td>
+                        </tr>-->
+
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="yfgf" style="display: ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">收入明细</a>
+                <span>&gt;</span>
+                <span href="">我的预付稿费</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span>我的预付稿费</span>
+                    <select name="" id="" class="fr">
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <div>
+                    <p>以下为预付稿费数据，如有问题请与编辑联系</p>
+
+                </div>
+                <div>选择年月：</div>
+                <div class="zp_list">
+                    <h3>《修罗天帝》2月预付稿费记录</h3>
+                    <table>
+                        <tr>
+                            <th>日期</th>
+                            <th>书号</th>
+                            <th>书名</th>
+                            <th>字数</th>
+                            <th>预付稿费</th>
+                            <th>红包</th>
+                            <th>其他</th>
+                            <th>合计</th>
+                        </tr>
+                        <tr>
+                            <td>2017-05-01</td>
+                            <td>1</td>
+                            <td>修罗天帝</td>
+                            <td>15.98</td>
+                            <td>58.72</td>
+                            <td>247.90</td>
+                            <td>73.5</td>
+                            <td>396.1</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="skxx" style="display: ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">收入明细</a>
+                <span>&gt;</span>
+                <span href="">我的收款信息</span>
+            </div>
+            <div class="contain_bg skxx_contain">
+                <div class="biaoqian">
+                    <span>我的预付稿费</span>
+
+                </div>
+                <div class="skxx_detail">
+                    <form action="">
+                        <ul>
+                            <li>
+                                <span>真实姓名：</span>
+                                <input type="text" value="某某某">
+                            </li>
+                            <li>
+                                <span>笔名：</span>
+                                <input type="text" value="某某某">
+                            </li>
+                            <li>
+                                <span>开户银行：</span>
+                                <input type="text" value="某某某">
+                            </li>
+                            <li>
+                                <span>银行开户姓名：</span>
+                                <input type="text" value="某某某">
+                            </li>
+                            <li>
+                                <span>银行卡号：</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>身份证号码：</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>手机号：</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>座机：</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>办公室号码：</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>邮编</span>
+                                <input type="text" value="12456789">
+                            </li>
+                            <li>
+                                <span>邮寄地址</span>
+                                <input type="text" value="某某某">
+                            </li>
+                            <input type="button" value="保存" class="zl_save">
+                        </ul>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>
