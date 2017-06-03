@@ -18,14 +18,57 @@
         height: 9px;
         display: inline-block;
     }
-    .zp_list div{
-        padding:15px ;
-        background: #e0e7ea;
-        height: 20px;
-        line-height:20px ;
-    }
+
     .zp_list .author_tz{
         height: auto;
+    }
+    .xzzp_detail{
+        width: 70%;
+        margin: 24px auto;
+        min-width: 480px;
+    }
+    .tip{
+        padding: 14px;
+        background: #e0e7ea;
+    }
+     .xzzp_detail ul{
+        margin-top: 20px;
+    }
+    .xzzp_detail ul li{
+        list-style: none;
+        line-height: 45px;
+        margin-bottom: 12px;
+    }
+     .xzzp_detail ul li span{
+        font-family: "黑体";
+        width: 100px;
+        display: inline-block;
+    }
+    .xzzp_detail textarea{
+        padding: 12px;
+        width: 410px;
+        height: 115px;
+        border: 1px solid #e0e7ea;
+    }
+     .xzzp_detail ul li:first-child input{
+        text-indent:2em;
+        width:360px ;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #e0e7ea;
+    }
+    .xzzp_detail .tongyi{
+        width: 35%;
+    }
+    .zl_save{
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+        background: #3d474d;
+        color: white;
+    }
+    .zpxg_contain {
+        height: 800px;
     }
 </style>
 <body>
@@ -76,7 +119,7 @@
 
             <dl>
 
-                <dt><i class="zpgl"></i>作品管理</a></dt>
+                <dt><a href="zpgl.html"><i class="zpgl"></i>作品管理</a></dt>
                 <dd>
                     <ul>
                         <li>作品信息管理</li>
@@ -103,7 +146,7 @@
             </dl>
 
         </aside>
-        <section class="zplb" style="display: ">
+        <section class="zplb" style="display:none ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -112,82 +155,141 @@
                 <span>&gt;</span>
                 <span href="">作品列表</span>
             </div>
-        </section>
-        <section class="gggl" style="display: none">
-            <!--公告头部-->
-            <div class="contain_head">
-                <a href="" class="shouye">首页</a>
-                <span>&gt;</span>
-                <a href="">作者专区</a>
-                <span>&gt;</span>
-                <span href="">公告管理</span>
-            </div>
-            <div class="author_announcement contain_gggl">
+            <div class="contain_bg">
                 <div class="biaoqian">
-                    <span>最新公告</span>
-                    <a href="" class="fr">更多</a>
-                </div>
-                <div class="gg_neirong">
-                    <ul>
-                        <li>标题 <span class="fr">时间</span></li>
-                        <li>作者投稿说明 <span class="fr">2017-12-5</span></li>
-                        <li>作者福利说明 <span class="fr">2017-12-5</span></li>
-                        <li>作者专区说明 <span class="fr">2017-12-5</span></li>
-                        <li>章节审核标准 <span class="fr">2017-12-5</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="xxgl" style="display: none">
-            <!--公告头部-->
-            <div class="contain_head">
-                <a href="" class="shouye">首页</a>
-                <span>&gt;</span>
-                <a href="">作者专区</a>
-                <span>&gt;</span>
-                <span href="">消息管理</span>
-            </div>
-            <div class="author_xx contain_bg">
-                <div class="biaoqian">
-                    <span>消息管理</span>
-                    <a href="" class="fr">更多</a>
+                    <span>作品列表</span>
                 </div>
                 <div class="zp_list">
                     <table>
                         <tr>
-                            <th>标题</th>
-                            <th>时间</th>
-                            <th>是否已读</th>
-
+                            <th>书号</th>
+                            <th>书名</th>
+                            <th>收藏</th>
+                            <th>进度</th>
+                            <th>授权状态</th>
+                            <th>审核状态</th>
+                            <th>相关操作</th>
                         </tr>
                         <tr>
-                            <td>章节审核驳回通知 <span></span></td>
-                            <td>2017-03-29 14:03:26</td>
-                            <td>已读 <span>√</span></td>
-                        </tr>
-                        <tr>
-                            <td>章节审核驳回通知 <span>▼</span></td>
-                            <td>2017-03-29 14:03:26</td>
-                            <td>为读 <span class="yidu"></span></td>
-                        </tr>
-                        <tr>
-                            <!--<td>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</td>-->
-                            <td colspan="3" nowrap style="padding: 0;">
-                                <div class="author_tz">
-                                    <p>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</p>
-                                    <p>原因：扫红豆啊我全文。</p>
-                                    <p>请根据驳回理由修改后重新提交，给您带来不便，请谅解。</p>
-                                </div>
-                            </td>
+                            <td>1</td>
+                            <td>修罗天帝</td>
+                            <td>1322</td>
+                            <td>连载中</td>
+                            <td>签约上架</td>
+                            <td>已审核</td>
+                            <td>作品管理</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </section>
+        <section class="sqqy" style="display: ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作者专区</a>
+                <span>&gt;</span>
+                <span href="">申请签约列表</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span>申请签约列表</span>
+                </div>
+                <div class="zp_list">
+                    <table>
+                        <tr>
+                            <th>书号</th>
+                            <th>书名</th>
+                            <th>进度</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>修罗天帝</td>
+                            <td>签约上架</td>
+                            <td>作品管理</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="xzzp" style="display:none ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作者专区</a>
+                <span>&gt;</span>
+                <span href="">新增作品</span>
+            </div>
+            <div class="contain_bg zpxg_contain">
+                <div class="biaoqian">
+                    <span>新增作品</span>
+                </div>
+                <div class="zp_list ">
+                    <p class="tip">作品创建后，请尽快上传新章节，当作品总字数满3000字后，编辑将会在2个工作日内进行审核</p>
+                    <div class="xzzp_detail">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <span>书名：</span>
+                                    <input type="text" value="某某某">
+                                </li>
+                                <li>
+                                    <span>作品类型：</span>
+                                    <select name="" id="">
+                                        <option value="">小说类型</option>
+                                        <option value="">123456</option>
+                                        <option value="">123456</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">一级分类</option>
+                                        <option value="">123456</option>
+                                        <option value="">123456</option>
+                                    </select>
+                                    <select name="" id="">
+                                    <option value="">二级分类</option>
+                                    <option value="">123456</option>
+                                    <option value="">123456</option>
+                                </select>
+                                </li>
+                                <li>
+                                    <span>作品标签：</span>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </li>
+                                <li>
+                                    <span>作品简介：</span>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </li>
+                                <li>
+                                    <span>授权状态：</span>
+                                    <select name="" id="">
+                                        <option value="">本站首发</option>
+                                        <option value="">asd a</option>
+                                        <option value="">asd asd a</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input name="Fruit" type="checkbox" value="" />
+                                    <span class="tongyi">我已经阅读并同意投稿须知</span>
+                                    <input type="button" value="保存" class="zl_save">
+                                </li>
+                                <li></li>
+                            </ul>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 </div>
 </body>
 <script>
-
+    $(function () {
+        $(".contain dl:nth-child(2)").find("dd").show(1000);
+    })
 </script>
 </html>

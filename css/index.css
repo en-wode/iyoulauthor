@@ -54,6 +54,16 @@ aside a{
     margin-top: 10px;
     height: 747px;
 }
+.tip_bg{
+    padding: 14px;
+    width: 89%;
+    margin: 12px auto;
+    background: #e0e7ea;
+    color: #99a8b1;
+}
+.tip_bg p{
+    line-height: 24px ;
+}
 .zp_list{
     width: 92%;
     margin: 0 auto;
@@ -77,6 +87,25 @@ table td{
     border-left:1px solid #e0e7ea;
     border-top:1px solid #e0e7ea;
     cursor: pointer;
+}
+.tx_tip{
+    line-height: 36px;
+    height: 36px;
+    font-family: "黑体";
+    font-size: 16px;
+}
+.bt{
+    border-top: 1px solid #e0e7ea;
+}
+.bt h3,.bt span{
+    line-height: 42px ;
+    height: 42px;
+}
+.time{
+    width: 92%;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
 }
 /*通用样式end*/
 /*index*/
@@ -273,10 +302,9 @@ section{
     height: 9px;
     display: inline-block;
 }
-.zp_list div{
+.zp_list author_tz{
     padding:15px ;
     background: #e0e7ea;
-    height: 20px;
     line-height:20px ;
 }
 .zp_list .author_tz{

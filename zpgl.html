@@ -29,12 +29,40 @@
     .fl_contain .fulisq{
         margin-top: 20px;
     }
+    .zpgl_contain li{
+        list-style: none;
+    }
+    .zpgl_contain li:not(:first-child){
+        height: 45px;
+        line-height: 45px;
+    }
     .fl_contain .fulisq input{
         margin-left: 20px;
         width: 60px;
         height: 20px;
         background: #e0e7ea;
     }
+    .zpgl_contain input{
+        width:118px ;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #e0e7ea;
+    }
+    .zpgl_contain .toux{
+        margin-top: 25px ;
+        margin-bottom: 30px;
+    }
+    .zpgl_contain .toux img:last-child{
+        margin-left:72px ;
+    }
+    .zpgl_contain .tx_push input{
+        margin-left: 20px;
+    }
+    .zpgl_contain .inp1{
+        background: #3d474d;
+        color: white;
+    }
+
 </style>
 <body>
 <div class="main">
@@ -61,7 +89,7 @@
         <aside>
             <div></div>
             <dl>
-                <dt><i class="zzzq"></i>作者专区</dt>
+                <dt><a href="index.html"><i class="zzzq"></i>作者专区</a></dt>
                 <dd>
                     <ul>
                         <li>作者中心</li>
@@ -73,7 +101,7 @@
 
             <dl>
 
-                <dt><i class="zpxg"></i>作品相关</dt>
+                <dt><a href="zpxg.html"><i class="zpxg"></i>作品相关</a></dt>
                 <dd>
                     <ul>
                         <li>作品列表</li>
@@ -85,7 +113,7 @@
 
             <dl>
 
-                <dt> <i class="zpgl"></i>作品管理</dt>
+                <dt class="lf_active"><a href="zpgl.html"><i class="zpgl"></i>作品管理</a> </dt>
                 <dd>
                     <ul>
                         <li>作品信息管理</li>
@@ -100,7 +128,7 @@
 
             <dl>
 
-                <dt><i class="srmx"></i>收入明细</dt>
+                <dt><a href="srmx.html"><i class="srmx"></i>收入明细</a></dt>
                 <dd>
                     <ul>
                         <li>作品收入</li>
@@ -112,7 +140,179 @@
             </dl>
 
         </aside>
-        <section class="zplb" style="display: ">
+        <section class="zplb" style="display:none ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+            </div>
+            <div class="contain_bg zpgl_contain">
+                <div class="biaoqian">
+                    <span>作品信息管理</span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="fl_contain zp_list">
+                    <form action="" method="post"  name="uploadform" class="tx_xg">
+                        <li class="toux"><img  src="" width="200" height="280" alt="" /><img  src="" width="200" height="280" alt="" /></li>
+                        <li class="tx_push">
+                            <span>请您选择本地封面图片：</span>
+                            <input type="text" size="20" name="upfile" id="upfile"  class="lujin">
+                            <input type="button" value="浏览..." onclick="path.click()" style="margin-left: 9px" class="inp0">
+                            <input type="file" id="path" style="display:none" onchange="upfile.value=this.value" name="postfile">
+                            <input type="button" class="inp1 bg" value="上传" onclick="uploadform.submit();"/>
+                        </li>
+                        <li>审核状态：<span>已通过</span><span >封面上传后，后台需要处理，请稍等几分钟后刷下页面即可看到新封面，无需多次上传</span></li>
+                    </form>
+                </div>
+                <div class="biaoqian">
+                    <span>封面要求</span>
+                    <span>上传规则</span>
+                </div>
+                <div class="zp_list tx_tip">
+                    <p>1.只能上传规格为200*250像素，文件大小40KB内的jpg图片；</p>
+                    <p>2.封面图片要求简介舒适，书名，笔名等文字清晰，图片清晰；</p>
+                    <p>3.禁止上传任何有黄色，暴力，血腥，广告宣传或者不适合公众欣赏的封面，一经发现即做禁书处理</p>
+                    <p>4.为保护肖像权，禁止上传任何以真实人物照片制作的封面；</p>
+                    <p>5.封面图片必须含有iyoule.com或有乐网的字样才可以通过审核。</p>
+                </div>
+            </div>
+        </section>
+        <section class="wdgf" style="display:none ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">收入明细</a>
+                <span>&gt;</span>
+                <span href="">我的稿费</span>
+            </div>
+            <div class="contain_bg wdgf">
+                <div class="biaoqian">
+                    <span>我的稿费</span>
+                    <select name="" id="" class="fr">
+                        <option value="0">选择作品</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <div class="tip_bg">
+                    <p>1.买断保底作品，除打赏外，其他一切福利均不享受。每月买断保底稿费以交稿量为准核算，具体稿费请与责编联系核对。保底作品转分成后，福利等同分成作品。</p>
+                    <p>2.如无特别说明，货币为人民币，单位为元。</p>
+                    <p>3.本月稿费将在次月5号前核算完毕，于次月20号汇款给作者，届时请查询，如有疑问请与编辑联系。</p>
+                </div>
+                <div class="time">选择年月：</div>
+                <div class="zp_list bt">
+                    <h3 class="fl">《修罗天帝》2017年1月稿酬</h3>
+                    <span class="fr">单位：元</span>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>书名</th>
+                            <td>修罗天帝</td>
+                        </tr>
+                        <tr>
+                            <th>订阅</th>
+                            <td>15.98</td>
+
+                        </tr>
+                        <tr>
+                            <th>买断/预付</th>
+                            <td>58.72</td>
+                        </tr>
+                        <tr>
+                            <th>渠道稿费</th>
+                            <td>247.90</td>
+                        </tr>
+                        <tr>
+                            <th>掌阅客户端</th>
+                            <td>73.5</td>
+
+                        </tr>
+                        <tr>
+                            <th>额外增加</th>
+                            <td>73.5</td>
+                        </tr>
+                        <tr>
+                            <th>累计以前未付款</th>
+                            <td>73.5</td>
+                        </tr>
+                        </tbody>
+                        <!--                        <tr>
+                                                    <td>签约性质</td>
+                                                    <td>道具收入</td>
+                                                    <td>全勤收入</td>
+                                                    <td>完本收入</td>
+                                                    <td>掌阅客户端打赏</td>
+                                                    <td>额外扣除</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>预付</td>
+                                                    <td>15.98</td>
+                                                    <td>58.72</td>
+                                                    <td>247.90</td>
+                                                    <td>73.5</td>
+                                                    <td>73.5</td>
+                                                    <td></td>
+                                                </tr>-->
+
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section style="display: ">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">更新字数统计</span>
+            </div>
+            <div class="contain_bg wdgf">
+                <div class="biaoqian">
+                    <span>更新字数统计</span>
+                    <select name="" id="" class="fr">
+                        <option value="0">选择作品</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <div class="time">选择年月：</div>
+                <div class="time">查询结果：</div>
+                <div class="zp_list bt">
+                    <h3 class="fl">《修罗天帝》2017年1月稿酬</h3>
+                    <span class="fr">单位：元</span>
+                    <table>
+                        <tr>
+                            <th>日期</th>
+                            <th>字数</th>
+                            <th>是否VIP</th>
+                        </tr>
+                        <tr>
+                            <td>2017-03-29 </td>
+                            <td>123456</td>
+                            <td>是 </td>
+                        </tr>
+                        <tr>
+                            <td>2017-03-29 </td>
+                            <td>123456</td>
+                            <td>否 </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section  style="display: none">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -121,7 +321,7 @@
                 <span>&gt;</span>
                 <span href="">申请福利</span>
             </div>
-            <div class="contain_bg">
+            <div class="contain_bg zpgl_contain">
                 <div class="biaoqian">
                     <span>申请福利</span>
                     <select name="" id="">
@@ -154,6 +354,9 @@
 </div>
 </body>
 <script>
+    $(function () {
+        $(".contain dl:nth-child(4)").find("dd").show(1000);
 
+    })
 </script>
 </html>
