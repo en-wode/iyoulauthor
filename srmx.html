@@ -5,7 +5,6 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
 </head>
 <style>
 .skxx_contain{
@@ -394,6 +393,13 @@
 </div>
 </body>
 <script>
+    $(function () {
+        $(".contain dl:nth-child(4)").find("dd").show(1000);
+        $(".contain dl:nth-child(4) dd li").click(function (){
+            var zpindex = $(this).index();
+            $("section").css("display","none").eq(zpindex).css("display","inline-block");
 
+        })
+    })
 </script>
 </html>

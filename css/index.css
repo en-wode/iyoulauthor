@@ -44,9 +44,20 @@ aside a{
     margin: 0 auto;
     border-bottom: 1px solid #e0e7ea;
 }
+.biaoqian span{
+    display: inline-block;
+}
+.biaoqian_line{
+    width: 2px;
+    background: #e0e7ea;
+    margin-left:6px ;
+    height: 26px;
+
+}
 .biaoqian span ,.biaoqian a{
-    line-height: 45px;
-    height: 45px;
+    line-height: 26px;
+    margin-top: 10px;
+    vertical-align: middle;
 }
 .contain_bg{
     width: 100%;
@@ -252,6 +263,11 @@ section{
 }
 .contain .author_fabu{
     vertical-align: middle;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: #a1b7c9;
+    cursor: pointer;
 }
 .author_announcement .gg_neirong {
     width: 90%;
@@ -302,12 +318,11 @@ section{
     height: 9px;
     display: inline-block;
 }
-.zp_list author_tz{
+.zp_list .author_tz{
     padding:15px ;
     background: #e0e7ea;
     line-height:20px ;
-}
-.zp_list .author_tz{
     height: auto;
 }
+
 /*消息管理end*/

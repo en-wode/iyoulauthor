@@ -184,18 +184,140 @@
                 </div>
             </div>
         </section>
+        <section class="zjgl" style="display: ">
+            <!--公告头部-->
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">章节管理</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span>章节管理</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option value="0">选择作品</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                        <option value="小人国">小人国</option>
+                    </select>
+                </div>
+                <style>
+                    .zp_list .zjgl_xuanze{
+                        height: 30px;
+                        margin:24px auto ;
+                    }
+                    .zjgl_xuanze .zjgl_name{
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-family: "微软雅黑";
+                    }
+                    .zjgl_xuanze .zjgl_show {
+                        margin-left: 40px;
+                    }
+                    .zjgl_line{
+                        display: inline-block;
+                        height: 16px;
+                        width: 1px;
+                        background: #7a8d99;
+                    }
+                    .zjgl_xuanze span ,.zjgl_xuanze a{
+                        vertical-align: middle;
+                    }
+                    .zjgl_xuanze a{
+                        line-height: 16px;
+                        height: 16px;
+                        color:#909fa9 ;
+                    }
+                    .zjgl_xuanze input{
+                        float: right;
+                        margin-left: 30px;
+                        background: #a1b7c9;
+                        color: white;
+                        padding: 7px 20px;
+                    }
+                    .zp_list .zjgl_juan li{
+                        list-style: none;
+                    }
+                    .zp_list .zjgl_juan ul li{
+                        width: 100%;
+                        height: 42px;
+                    }
+                    .zp_list .zjgl_juan li a ,.zp_list .zjgl_juan li span:last-child{
+                        float: right;
+                        margin-left:20px ;
+                        margin-right:20px ;
+                        color:#a1b7c9;
+                    }
+                    .zp_list .zjgl_zhang{
+                        width: 95% !important;
+                        margin-left: 5%;
+                    }
+                </style>
+                <div class="zp_list">
+                    <div class="zjgl_xuanze">
+                        <span class="zjgl_name">书名：修罗天帝</span>
+                        <a href="" class="zjgl_show">展示所有</a>
+                        <span class="zjgl_line"></span>
+                        <a href="">仅显示待审</a>
+                        <input type="button" value="添加作品相关卷">
+                        <input type="button" value="草稿箱">
+                    </div>
+                    <div class="zjgl_juan">
+                        <ul>
+                            <li>
+                                <span>▼</span>
+                                <span>作品相关卷</span>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span>▼</span>
+                                <span>第一卷  修罗子</span>
+                                <a href="">修改标题和卷简介</a>
+                                <span class="zjgl_line fr"></span>
+                                <a href="">修改本卷</a>
+                            </li>
+                            <li class="zjgl_zhang">
+                                <span>第一卷  修罗子</span>
+                                <a href="">修改</a>
+                                <a href="">增加</a>
+                                <a href="">删除</a>
+                                <span>2017-01-05 11:30</span>
+                                <span>2630字</span>
+                            </li>
+                            <li>
+                                <span>▼</span>
+                                <span>第二卷  修罗子</span>
+                                <a href="">修改标题和卷简介</a>
+                                <span class="zjgl_line fr"></span>
+                                <a href="">修改本卷</a>
+                            </li>
+                            <li>
+                                <span>▼</span>
+                                <span>第三卷  修罗子</span>
+                                <a href="">修改标题和卷简介</a>
+                                <span class="zjgl_line fr"></span>
+                                <a href="">修改本卷</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="wdgf" style="display:none ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
                 <span>&gt;</span>
-                <a href="">收入明细</a>
+                <a href="">作品管理</a>
                 <span>&gt;</span>
-                <span href="">我的稿费</span>
+                <span href="">本书稿费</span>
             </div>
             <div class="contain_bg wdgf">
                 <div class="biaoqian">
-                    <span>我的稿费</span>
+                    <span>本书稿费</span>
                     <select name="" id="" class="fr">
                         <option value="0">选择作品</option>
                         <option value="小人国">小人国</option>
@@ -268,7 +390,7 @@
                 </div>
             </div>
         </section>
-        <section style="display: ">
+        <section style="display:none ">
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
                 <span>&gt;</span>
@@ -356,7 +478,11 @@
 <script>
     $(function () {
         $(".contain dl:nth-child(4)").find("dd").show(1000);
+        $(".contain dl:nth-child(4) dd li").click(function (){
+            var zpindex = $(this).index();
+            $("section").css("display","none").eq(zpindex).css("display","inline-block");
 
+        })
     })
 </script>
 </html>

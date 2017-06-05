@@ -146,7 +146,7 @@
             </dl>
 
         </aside>
-        <section class="zplb" style="display:none ">
+        <section class="zplb" style="display: inline-block">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -158,6 +158,7 @@
             <div class="contain_bg">
                 <div class="biaoqian">
                     <span>作品列表</span>
+                    <span class="biaoqian_line"></span>
                 </div>
                 <div class="zp_list">
                     <table>
@@ -183,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="sqqy" style="display: ">
+        <section class="sqqy" style="display:none ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -195,6 +196,7 @@
             <div class="contain_bg">
                 <div class="biaoqian">
                     <span>申请签约列表</span>
+                    <span class="biaoqian_line"></span>
                 </div>
                 <div class="zp_list">
                     <table>
@@ -226,6 +228,7 @@
             <div class="contain_bg zpxg_contain">
                 <div class="biaoqian">
                     <span>新增作品</span>
+                    <span class="biaoqian_line"></span>
                 </div>
                 <div class="zp_list ">
                     <p class="tip">作品创建后，请尽快上传新章节，当作品总字数满3000字后，编辑将会在2个工作日内进行审核</p>
@@ -290,6 +293,12 @@
 <script>
     $(function () {
         $(".contain dl:nth-child(2)").find("dd").show(1000);
+        $(".contain dl:nth-child(2) dd li").click(function (){
+            var zpindex = $(this).index();
+            $("section").css("display","none").eq(zpindex).css("display","inline-block");
+
+        })
     })
+
 </script>
 </html>
