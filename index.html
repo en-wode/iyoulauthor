@@ -195,6 +195,7 @@
                     <div class="author_announcement">
                         <div class="biaoqian">
                             <span>最新公告</span>
+                            <span class="biaoqian_line"></span>
                             <a href="" class="fr">更多</a>
                         </div>
                         <div class="gg_neirong">
@@ -209,6 +210,7 @@
                     <div class="author_anthology ">
                         <div class="biaoqian">
                             <span>作品列表</span>
+                            <span class="biaoqian_line"></span>
                         </div>
                     <div class="zp_list">
                         <table>
@@ -247,6 +249,7 @@
                 <div class="author_announcement contain_gggl">
                     <div class="biaoqian">
                         <span>最新公告</span>
+                        <span class="biaoqian_line"></span>
                         <a href="" class="fr">更多</a>
                     </div>
                     <div class="gg_neirong">
@@ -273,6 +276,7 @@
                 <div class="author_xx contain_bg">
                     <div class="biaoqian">
                         <span>消息管理</span>
+                        <span class="biaoqian_line"></span>
                         <a href="" class="fr">更多</a>
                     </div>
                     <div class="zp_list">
@@ -334,10 +338,10 @@
                 }
             }
         })
-        $(".contain dl:nth-child(2)").find("dd").show(1000);
+        $(".contain dl:nth-child(2)").find("dd").slideToggle("slow");
         $(".contain dl:nth-child(2) dd li").mouseover(function () {
             var ctop = $(this).index()+1;
-            $(".check").css("top",ctop*50)
+            $(".check").css("top",ctop*50);
             console.log($(this).index());
         })
     }
