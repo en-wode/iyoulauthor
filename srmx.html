@@ -109,13 +109,13 @@
 
             <dl>
 
-                <dt class="lf_active" ><a href="srmx.html"><i class="srmx"></i>收入明细</a></dt>
+                <dt class="lf_active" ><a href="srmx.html"><i class="ac_srmx"></i>收入明细</a></dt>
                 <dd>
                     <ul>
-                        <li>作品收入</li>
-                        <li>我的稿费</li>
-                        <li>我的预付稿费</li>
-                        <li>我的收款资料</li>
+                        <li><span class="dian"></span>作品收入</li>
+                        <li><span class="dian"></span>我的稿费</li>
+                        <li><span class="dian"></span>我的预付稿费</li>
+                        <li><span class="dian"></span>我的收款资料</li>
                     </ul>
                 </dd>
             </dl>
@@ -139,14 +139,34 @@
                         <option value="小人国">小人国</option>
                     </select>
                 </div>
-                <div>
+                <div class="tip_bg">
                     <p>1.以下收入数据仅作参考，时机收入以最后结算为准。</p>
                     <p>2.每天下午5点后可查阅前一天的客户端收入。</p>
                     <p>3.以下金额均为分成后您可得到的实际金额，。</p>
                     <p>4.客户端收入按总收入的70%给你您分成。</p>
                     <p>5.买断作品暂无数据。</p>
                 </div>
-                <div>选择年月：</div>
+                <div class="time">选择年月：
+                    <select name="" id="">
+                        <option value="">2017年</option>
+                        <option value="">2018年</option>
+                        <option value="">2019年</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">1月</option>
+                        <option value="">2月</option>
+                        <option value="">3月</option>
+                        <option value="">4月</option>
+                        <option value="">5月</option>
+                        <option value="">6月</option>
+                        <option value="">7月</option>
+                        <option value="">8月</option>
+                        <option value="">9月</option>
+                        <option value="">10月</option>
+                        <option value="">11月</option>
+                        <option value="">12月</option>
+                    </select>
+                </div>
                 <div class="zp_list">
 
                     <table>
@@ -206,62 +226,110 @@
                     <p>2.如无特别说明，货币为人民币，单位为元。</p>
                     <p>3.本月稿费将在次月5号前核算完毕，于次月20号汇款给作者，届时请查询，如有疑问请与编辑联系。</p>
                 </div>
-                <div class="time">选择年月：</div>
-                <div class="zp_list bt">
+                <div class="time">选择年月：
+                    <select name="" id="">
+                        <option value="">2017年</option>
+                        <option value="">2018年</option>
+                        <option value="">2019年</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">1月</option>
+                        <option value="">2月</option>
+                        <option value="">3月</option>
+                        <option value="">4月</option>
+                        <option value="">5月</option>
+                        <option value="">6月</option>
+                        <option value="">7月</option>
+                        <option value="">8月</option>
+                        <option value="">9月</option>
+                        <option value="">10月</option>
+                        <option value="">11月</option>
+                        <option value="">12月</option>
+                    </select>
+                    <input type="button" value="查询" class="search">
+                </div>
+                <div class="zp_list bt zpgl_gf">
                     <h3 class="fl">《修罗天帝》2017年1月稿酬</h3>
                     <span class="fr">单位：元</span>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th>书名</th>
-                            <td>修罗天帝</td>
-                        </tr>
-                        <tr>
-                            <th>订阅</th>
-                            <td>15.98</td>
+                    <table class="gf">
+                        <td class="bd">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>书名</th>
+                                    <td>修罗天帝</td>
+                                </tr>
+                                <tr>
+                                    <th>订阅</th>
+                                    <td>15.98</td>
+                                </tr>
+                                <tr>
+                                    <th>买断/预付</th>
+                                    <td>58.72</td>
+                                </tr>
+                                <tr>
+                                    <th>渠道稿费</th>
+                                    <td>247.90</td>
+                                </tr>
+                                <tr>
+                                    <th>掌阅客户端</th>
+                                    <td>73.5</td>
 
-                        </tr>
-                        <tr>
-                            <th>买断/预付</th>
-                            <td>58.72</td>
-                        </tr>
-                        <tr>
-                            <th>渠道稿费</th>
-                            <td>247.90</td>
-                        </tr>
-                        <tr>
-                            <th>掌阅客户端</th>
-                            <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th>额外增加</th>
+                                    <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th>累计以前未付款</th>
+                                    <td>73.5</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="bd">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>签约性质</th>
+                                    <td>预付</td>
+                                </tr>
+                                <tr>
+                                    <th>道具收入</th>
+                                    <td>857.21</td>
+                                </tr>
+                                <tr>
+                                    <th>全勤收入</th>
+                                    <td>58.72</td>
+                                </tr>
+                                <tr>
+                                    <th>完本收入</th>
+                                    <td>247.90</td>
+                                </tr>
+                                <tr>
+                                    <th>掌阅客户端</th>
+                                    <td>73.5</td>
 
+                                </tr>
+                                <tr>
+                                    <th>额外扣除</th>
+                                    <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <tr class="gf_all">
+                            <td></td>
+                            <td><span>小计：<span class="total1">3677.51</span>元</span> <span>支付状态：<span class="yizhifu">已汇款</span></span></td>
                         </tr>
-                        <tr>
-                            <th>额外增加</th>
-                            <td>73.5</td>
+                        <tr class="gf_all">
+                            <td></td>
+                            <td>《修罗天帝》2017年1月稿酬共计：<span class="total2">36077.51元</span></td>
                         </tr>
-                        <tr>
-                            <th>累计以前未付款</th>
-                            <td>73.5</td>
-                        </tr>
-                        </tbody>
-                        <!--                        <tr>
-                                                    <td>签约性质</td>
-                                                    <td>道具收入</td>
-                                                    <td>全勤收入</td>
-                                                    <td>完本收入</td>
-                                                    <td>掌阅客户端打赏</td>
-                                                    <td>额外扣除</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>预付</td>
-                                                    <td>15.98</td>
-                                                    <td>58.72</td>
-                                                    <td>247.90</td>
-                                                    <td>73.5</td>
-                                                    <td>73.5</td>
-                                                    <td></td>
-                                                </tr>-->
-
                     </table>
                 </div>
             </div>
@@ -284,11 +352,31 @@
                         <option value="小人国">小人国</option>
                     </select>
                 </div>
-                <div>
+                <div class="tip_bg">
                     <p>以下为预付稿费数据，如有问题请与编辑联系</p>
 
                 </div>
-                <div>选择年月：</div>
+                <div class="time">选择年月：
+                    <select name="" id="">
+                        <option value="">2017年</option>
+                        <option value="">2018年</option>
+                        <option value="">2019年</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">1月</option>
+                        <option value="">2月</option>
+                        <option value="">3月</option>
+                        <option value="">4月</option>
+                        <option value="">5月</option>
+                        <option value="">6月</option>
+                        <option value="">7月</option>
+                        <option value="">8月</option>
+                        <option value="">9月</option>
+                        <option value="">10月</option>
+                        <option value="">11月</option>
+                        <option value="">12月</option>
+                    </select>
+                </div>
                 <div class="zp_list">
                     <h3>《修罗天帝》2月预付稿费记录</h3>
                     <table>
@@ -316,9 +404,6 @@
                     </table>
                 </div>
             </div>
-        </section>
-        <section>
-
         </section>
         <section class="skxx" style="display:none ">
             <!--公告头部-->
@@ -394,7 +479,7 @@
 </body>
 <script>
     $(function () {
-        $(".contain dl:nth-child(4)").find("dd").show(1000);
+        $(".contain dl:nth-child(4)").find("dd").slideToggle("slow");
         $(".contain dl:nth-child(4) dd li").click(function (){
             var zpindex = $(this).index();
             $("section").css("display","none").eq(zpindex).css("display","inline-block");

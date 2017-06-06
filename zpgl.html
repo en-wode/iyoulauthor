@@ -7,63 +7,7 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 </head>
-<style>
-    .author_xx table th:first-child,.author_xx table td:first-child{
-        text-align: left;
-        padding-left: 10px;
-    }
-    .yidu{
-        background: url("img/head/icon_remind.png") no-repeat;
-        width: 9px;
-        height: 9px;
-        display: inline-block;
-    }
-    .fl_contain .fl_bg{
-        padding: 14px;
-        background: #e0e7ea;
-    }
-    .fl_contain p{
-        line-height: 26px;
-        height: 26px;
-    }
-    .fl_contain .fulisq{
-        margin-top: 20px;
-    }
-    .zpgl_contain li{
-        list-style: none;
-    }
-    .zpgl_contain li:not(:first-child){
-        height: 45px;
-        line-height: 45px;
-    }
-    .fl_contain .fulisq input{
-        margin-left: 20px;
-        width: 60px;
-        height: 20px;
-        background: #e0e7ea;
-    }
-    .zpgl_contain input{
-        width:118px ;
-        height: 28px;
-        line-height: 28px;
-        border: 1px solid #e0e7ea;
-    }
-    .zpgl_contain .toux{
-        margin-top: 25px ;
-        margin-bottom: 30px;
-    }
-    .zpgl_contain .toux img:last-child{
-        margin-left:72px ;
-    }
-    .zpgl_contain .tx_push input{
-        margin-left: 20px;
-    }
-    .zpgl_contain .inp1{
-        background: #3d474d;
-        color: white;
-    }
 
-</style>
 <body>
 <div class="main">
     <!--头部组合-->
@@ -113,15 +57,15 @@
 
             <dl>
 
-                <dt class="lf_active"><a href="zpgl.html"><i class="zpgl"></i>作品管理</a> </dt>
+                <dt class="lf_active"><a href="zpgl.html"><i class="ac_zpgl"></i>作品管理</a> </dt>
                 <dd>
                     <ul>
-                        <li>作品信息管理</li>
-                        <li>章节管理</li>
-                        <li>本书稿费</li>
-                        <li>书评管理</li>
-                        <li>更新字数统计</li>
-                        <li>申请福利</li>
+                        <li><span class="dian"></span>作品信息管理</li>
+                        <li><span class="dian"></span>章节管理</li>
+                        <li><span class="dian"></span>本书稿费</li>
+                        <li><span class="dian"></span>书评管理</li>
+                        <li><span class="dian"></span>更新字数统计</li>
+                        <li><span class="dian"></span>申请福利</li>
                     </ul>
                 </dd>
             </dl>
@@ -184,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section class="zjgl" style="display: ">
+        <section class="zjgl" style="display:none ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -205,56 +149,7 @@
                     </select>
                 </div>
                 <style>
-                    .zp_list .zjgl_xuanze{
-                        height: 30px;
-                        margin:24px auto ;
-                    }
-                    .zjgl_xuanze .zjgl_name{
-                        font-size: 16px;
-                        font-weight: bold;
-                        font-family: "微软雅黑";
-                    }
-                    .zjgl_xuanze .zjgl_show {
-                        margin-left: 40px;
-                    }
-                    .zjgl_line{
-                        display: inline-block;
-                        height: 16px;
-                        width: 1px;
-                        background: #7a8d99;
-                    }
-                    .zjgl_xuanze span ,.zjgl_xuanze a{
-                        vertical-align: middle;
-                    }
-                    .zjgl_xuanze a{
-                        line-height: 16px;
-                        height: 16px;
-                        color:#909fa9 ;
-                    }
-                    .zjgl_xuanze input{
-                        float: right;
-                        margin-left: 30px;
-                        background: #a1b7c9;
-                        color: white;
-                        padding: 7px 20px;
-                    }
-                    .zp_list .zjgl_juan li{
-                        list-style: none;
-                    }
-                    .zp_list .zjgl_juan ul li{
-                        width: 100%;
-                        height: 42px;
-                    }
-                    .zp_list .zjgl_juan li a ,.zp_list .zjgl_juan li span:last-child{
-                        float: right;
-                        margin-left:20px ;
-                        margin-right:20px ;
-                        color:#a1b7c9;
-                    }
-                    .zp_list .zjgl_zhang{
-                        width: 95% !important;
-                        margin-left: 5%;
-                    }
+
                 </style>
                 <div class="zp_list">
                     <div class="zjgl_xuanze">
@@ -306,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="wdgf" style="display:none ">
+        <section class="wdgf" style="display: ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -331,61 +226,88 @@
                     <p>3.本月稿费将在次月5号前核算完毕，于次月20号汇款给作者，届时请查询，如有疑问请与编辑联系。</p>
                 </div>
                 <div class="time">选择年月：</div>
-                <div class="zp_list bt">
+                <div class="zp_list bt zpgl_gf">
                     <h3 class="fl">《修罗天帝》2017年1月稿酬</h3>
                     <span class="fr">单位：元</span>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th>书名</th>
-                            <td>修罗天帝</td>
-                        </tr>
-                        <tr>
-                            <th>订阅</th>
-                            <td>15.98</td>
+                    <table class="gf">
+                        <td class="bd">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>书名</th>
+                                    <td>修罗天帝</td>
+                                </tr>
+                                <tr>
+                                    <th>订阅</th>
+                                    <td>15.98</td>
+                                </tr>
+                                <tr>
+                                    <th>买断/预付</th>
+                                    <td>58.72</td>
+                                </tr>
+                                <tr>
+                                    <th>渠道稿费</th>
+                                    <td>247.90</td>
+                                </tr>
+                                <tr>
+                                    <th>掌阅客户端</th>
+                                    <td>73.5</td>
 
-                        </tr>
-                        <tr>
-                            <th>买断/预付</th>
-                            <td>58.72</td>
-                        </tr>
-                        <tr>
-                            <th>渠道稿费</th>
-                            <td>247.90</td>
-                        </tr>
-                        <tr>
-                            <th>掌阅客户端</th>
-                            <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th>额外增加</th>
+                                    <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th>累计以前未付款</th>
+                                    <td>73.5</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="bd">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>签约性质</th>
+                                    <td>预付</td>
+                                </tr>
+                                <tr>
+                                    <th>道具收入</th>
+                                    <td>857.21</td>
+                                </tr>
+                                <tr>
+                                    <th>全勤收入</th>
+                                    <td>58.72</td>
+                                </tr>
+                                <tr>
+                                    <th>完本收入</th>
+                                    <td>247.90</td>
+                                </tr>
+                                <tr>
+                                    <th>掌阅客户端</th>
+                                    <td>73.5</td>
 
+                                </tr>
+                                <tr>
+                                    <th>额外扣除</th>
+                                    <td>73.5</td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <tr class="gf_all">
+                            <td></td>
+                            <td><span>小计：<span class="total1">3677.51</span>元</span> <span>支付状态：<span class="yizhifu">已汇款</span></span></td>
                         </tr>
-                        <tr>
-                            <th>额外增加</th>
-                            <td>73.5</td>
+                        <tr class="gf_all">
+                            <td></td>
+                            <td>《修罗天帝》2017年1月稿酬共计：<span class="total2">36077.51元</span></td>
                         </tr>
-                        <tr>
-                            <th>累计以前未付款</th>
-                            <td>73.5</td>
-                        </tr>
-                        </tbody>
-                        <!--                        <tr>
-                                                    <td>签约性质</td>
-                                                    <td>道具收入</td>
-                                                    <td>全勤收入</td>
-                                                    <td>完本收入</td>
-                                                    <td>掌阅客户端打赏</td>
-                                                    <td>额外扣除</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>预付</td>
-                                                    <td>15.98</td>
-                                                    <td>58.72</td>
-                                                    <td>247.90</td>
-                                                    <td>73.5</td>
-                                                    <td>73.5</td>
-                                                    <td></td>
-                                                </tr>-->
-
                     </table>
                 </div>
             </div>
@@ -477,7 +399,7 @@
 </body>
 <script>
     $(function () {
-        $(".contain dl:nth-child(4)").find("dd").show(1000);
+        $(".contain dl:nth-child(4)").find("dd").slideToggle("slow");
         $(".contain dl:nth-child(4) dd li").click(function (){
             var zpindex = $(this).index();
             $("section").css("display","none").eq(zpindex).css("display","inline-block");

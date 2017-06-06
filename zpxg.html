@@ -107,12 +107,15 @@
 
             <dl>
 
-                <dt class="lf_active" ><a href="zpxg.html"><i class="zpxg"></i>作品相关</a></dt>
+                <dt class="lf_active" ><a href="zpxg.html"><i class="ac_zpxg"></i>作品相关</a></dt>
                 <dd>
+                    <style>
+
+                    </style>
                     <ul>
-                        <li>作品列表</li>
-                        <li>申请签约</li>
-                        <li>新增作品</li>
+                        <li><span class="dian"></span>作品列表</li>
+                        <li><span class="dian"></span>申请签约</li>
+                        <li><span class="dian"></span>新增作品</li>
                     </ul>
                 </dd>
             </dl>
@@ -292,7 +295,7 @@
 </body>
 <script>
     $(function () {
-        $(".contain dl:nth-child(2)").find("dd").show(1000);
+        $(".contain dl:nth-child(2)").find("dd").slideToggle("slow");
         $(".contain dl:nth-child(2) dd li").click(function (){
             var zpindex = $(this).index();
             $("section").css("display","none").eq(zpindex).css("display","inline-block");
