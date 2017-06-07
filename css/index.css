@@ -26,6 +26,10 @@ body{background-color: rgba(224, 231, 234, 1);}
 
 .main{width: 100%;height: 100%}
 /*通用样式*/
+input[type="button"]{
+    cursor: pointer;
+}
+
 .dian{
     background: url(../img/aside/dian.png)no-repeat;
     display: inline-block;
@@ -35,9 +39,19 @@ body{background-color: rgba(224, 231, 234, 1);}
     margin-left: 30px;
     margin-right: 13px;
 }
+.active{
+    background: white;
+    color: black;
+    border-radius: 22px 0 0 22px;
+    -moz-border-radius:22px 0 0 22px; /* Firefox */
+    -webkit-border-radius: 22px 0 0 22px;
+}
 aside a{
     display: inline-block;
     width: 100%;
+}
+aside li:hover{
+    color: black;
 }
 aside li{
     list-style: none;
@@ -243,6 +257,7 @@ aside dt,aside dd li{
     height: 50px;
     line-height: 50px;
     cursor: pointer;
+    color:#99a8b2;
 }
 
 aside dt{
@@ -302,7 +317,7 @@ section{
     display: inline-block;
     position: absolute;
     width: 82%;
-    min-width: 700px;
+    min-width: 750px;
 }
 .contain .author_person,.contain .author_gggl{
     width: 100%;
@@ -336,7 +351,7 @@ section{
 }
 .contain .author_new{
     display: inline-block;
-    width: 66%;
+    width: 63%;
     vertical-align: middle;
     height: 80px;
     line-height: 46px;
@@ -414,7 +429,7 @@ section{
     padding-left: 10px;
 }
 .yidu{
-    background: url("img/head/icon_remind.png") no-repeat;
+    background: url("../img/head/icon_remind.png") no-repeat;
     width: 9px;
     height: 9px;
     display: inline-block;
@@ -440,7 +455,6 @@ section{
 .fl_contain .fulisq input{
     margin-left: 20px;
     width: 60px;
-    height: 20px;
     background: #e0e7ea;
 }
 .zpgl_contain input{
@@ -516,3 +530,79 @@ section{
 .zpgl_gf table{
     margin-top: 0;
 }
+
+/*修改章节*/
+.xgzj_detail{
+    width: 92%;
+    margin: 0 auto;
+}
+.xgzj_detail ul{
+    margin-top: 20px;
+}
+.xgzj_detail ul li{
+    height: auto!important;
+    list-style: none;
+    margin-bottom: 12px;
+}
+.xgzj_ht{
+    height: 1200px!important;
+}
+.xgzj_detail p{
+    height: 30px;
+    line-height: 30px;
+}
+.xgzj_detail ul li span{
+    font-family: "黑体";
+    display: inline-block;
+}
+.xgzj_detail ul li input{
+    border: 1px solid #e0e7ea;
+    padding-left: 8px;
+}
+.xgzj_detail input[type="button"]{
+    margin-right: 20px;
+    height: 30px;
+    width: 100px;
+    background: #3d474d;
+    color: white;
+    border-radius: 4px;
+    -moz-border-radius:4px; /* Firefox */
+    -webkit-border-radius: 4px;
+}
+.wid_60{
+    width: 60px;
+}
+.upload{
+    margin-top: 50px;
+}
+.upload input{
+    width: 140px!important;
+    height: 50px!important;;
+    margin-left: 5%;
+}
+.upload input:first-child{
+    margin-left: 10%;
+}
+.xgzj_detail .cgx_tip{
+    background: #e0e7ea;
+    padding-left: 6px;
+    margin-bottom: 5px;
+}
+.xgzj_detail .cgx_tip a{
+    color: dodgerblue;
+}
+.xgzj_detail .cgx_tip span{
+    color: red;
+}
+.back{
+    margin-right: 60px;
+    width: 80px;
+    height: 30px !important;
+    line-height: 30px!important;
+    margin-top: 8px;
+    background:#a1b7c9;
+    color: white!important;
+    text-align: center;
+
+}
+/*修改章节end*/
