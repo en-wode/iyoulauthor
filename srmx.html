@@ -479,6 +479,10 @@
 </body>
 <script>
     $(function () {
+        alert(1)
+        $(".contain dl:nth-child(4)").click(function () {
+            alert(1)
+        })
         $(".contain dl:nth-child(4)").find("dd").slideToggle("slow");
         $(".contain dl:nth-child(4) dd li").click(function (){
             var zpindex = $(this).index();

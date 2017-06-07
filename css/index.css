@@ -29,7 +29,9 @@ body{background-color: rgba(224, 231, 234, 1);}
 input[type="button"]{
     cursor: pointer;
 }
-
+input[type="checkbox"]{
+    vertical-align: middle;
+}
 .dian{
     background: url(../img/aside/dian.png)no-repeat;
     display: inline-block;
@@ -512,16 +514,24 @@ section{
 }
 .zp_list .zjgl_juan li{
     list-style: none;
+    border-bottom: 1px solid #e0e7ea;
 }
 .zp_list .zjgl_juan ul li{
     width: 100%;
     height: 42px;
+    line-height: 42px;
 }
-.zp_list .zjgl_juan li a ,.zp_list .zjgl_juan li span:last-child{
+.zp_list .zjgl_juan li a {
     float: right;
     margin-left:20px ;
     margin-right:20px ;
     color:#a1b7c9;
+}
+.zp_list .zjgl_juan li span{
+
+}
+.zjgl_juan .zjgl_line{
+    margin-top: 12px;
 }
 .zp_list .zjgl_zhang{
     width: 95% !important;

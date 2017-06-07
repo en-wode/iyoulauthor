@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.bootcss.com/babel-polyfill/7.0.0-alpha.12/polyfill.js"></script>
     <!--<script type="text/javascript" src="js/common.js"></script>-->
     <script type="text/javascript" src="js/vue.min.js"></script>
 </head>
@@ -183,136 +184,135 @@
 <script>
     window.onload=function(){
         Vue.component('child1',{
-            template:`<div>
-                    <div class="author_person">
-                        <div class="author_tx">
-                            <img src="" alt="">
-                        </div>
-                        <div class="author_new">
-                            <p class="author_name">踏雪无痕</p>
-                            <p>今天是2017年5月17日，星期三，本月已更新0天，共计更新0字</p>
-                        </div>
-                        <input type="button" value="发布作品" class="author_fabu">
-                    </div>
-                    <div class="author_announcement">
-                        <div class="biaoqian">
-                            <span>最新公告</span>
-                            <span class="biaoqian_line"></span>
-                            <a href="" class="fr">更多</a>
-                        </div>
-                        <div class="gg_neirong">
-                        <ul>
-                            <li>作者投稿说明 <span class="fr">2017-12-5</span></li>
-                            <li>作者福利说明 <span class="fr">2017-12-5</span></li>
-                            <li>作者专区说明 <span class="fr">2017-12-5</span></li>
-                            <li>章节审核标准 <span class="fr">2017-12-5</span></li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="author_anthology ">
-                        <div class="biaoqian">
-                            <span>作品列表</span>
-                            <span class="biaoqian_line"></span>
-                        </div>
-                    <div class="zp_list">
-                        <table>
-                            <tr>
-                            <th>书号</th>
-                            <th>书名</th>
-                            <th>收藏</th>
-                            <th>进度</th>
-                            <th>授权状态</th>
-                            <th>审核状态</th>
-                            <th>相关操作</th>
-                            </tr>
-                            <tr>
-                            <td>1</td>
-                            <td>修罗天帝</td>
-                            <td>1322</td>
-                            <td>连载中</td>
-                            <td>签约上架</td>
-                            <td>已审核</td>
-                            <td>作品管理</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </div>
-                    </div>`
+            template:"<div>"+
+            "<div class=\"author_person\">"+
+            "<div class=\"author_tx\">"+
+            "<img src=\"\" alt=\"\">"+
+            "</div>"+
+            "<div class=\"author_new\">"+
+            "<p class=\"author_name\">踏雪无痕</p>"+
+            "<p>今天是2017年5月17日，星期三，本月已更新0天，共计更新0字</p>"+
+            "</div>"+
+            "<input type=\"button\" value=\"发布作品\" class=\"author_fabu\">"+
+            "</div>"+
+            "<div class=\"author_announcement\">"+
+            "<div class=\"biaoqian\">"+
+            "<span>最新公告</span>"+
+            "<span class=\"biaoqian_line\"></span>"+
+            "<a href=\"\" class=\"fr\">更多</a>"+
+            "</div>"+
+            "<div class=\"gg_neirong\">"+
+            "<ul>"+
+            "<li>作者投稿说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>作者福利说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>作者专区说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>章节审核标准 <span class=\"fr\">2017-12-5</span></li>"+
+            "</ul>"+
+            "</div>"+
+            "</div>"+
+            "<div class=\"author_anthology \">"+
+            "<div class=\"biaoqian\">"+
+            "<span>作品列表</span>"+
+            "<span class=\"biaoqian_line\"></span>"+
+            "</div>"+
+            "<div class=\"zp_list\">"+
+            "<table>"+
+            "<tr>"+
+            "<th>书号</th>"+
+            "<th>书名</th>"+
+            "<th>收藏</th>"+
+            "<th>进度</th>"+
+            "<th>授权状态</th>"+
+            "<th>审核状态</th>"+
+            "<th>相关操作</th>"+
+            "</tr>"+
+            "<tr>"+
+            "<td>1</td>"+
+            "<td>修罗天帝</td>"+
+            "<td>1322</td>"+
+            "<td>连载中</td>"+
+            "<td>签约上架</td>"+
+            "<td>已审核</td>"+
+            "<td>作品管理</td>"+
+            "</tr>"+
+            "</table>"+
+            "</div>"+
+            "</div>"+
+            "</div>"
         })
         Vue.component('child2',{
-            template:`<div>
-                    <div class="contain_head">
-                    <a href="" class="shouye">首页</a>
-                    <span>&gt;</span>
-                    <a href="">作者专区</a>
-                    <span>&gt;</span>
-                    <span href="">公告管理</span>
-                </div>
-                <div class="author_announcement contain_gggl">
-                    <div class="biaoqian">
-                        <span>最新公告</span>
-                        <span class="biaoqian_line"></span>
-                        <a href="" class="fr">更多</a>
-                    </div>
-                    <div class="gg_neirong">
-                        <ul>
-                            <li>标题 <span class="fr">时间</span></li>
-                            <li>作者投稿说明 <span class="fr">2017-12-5</span></li>
-                            <li>作者福利说明 <span class="fr">2017-12-5</span></li>
-                            <li>作者专区说明 <span class="fr">2017-12-5</span></li>
-                            <li>章节审核标准 <span class="fr">2017-12-5</span></li>
-                        </ul>
-                    </div>
-                </div>
-                    </div>`
+            template:"<div>"+
+            "<div class=\"contain_head\">"+
+            "<a href=\"\" class=\"shouye\">首页</a>"+
+            "<span>&gt;</span>"+
+            "<a href=\"\">作者专区</a>"+
+            "<span>&gt;</span>"+
+            "<span href=\"\">公告管理</span>"+
+            "</div>"+
+            "<div class=\"author_announcement contain_gggl\">"+
+            "<div class=\"biaoqian\">"+
+            "<span>最新公告</span>"+
+            "<span class=\"biaoqian_line\"></span>"+
+            "<a href=\"\" class=\"fr\">更多</a>"+
+            "</div>"+
+            "<div class=\"gg_neirong\">"+
+            "<ul>"+
+            "<li>标题 <span class=\"fr\">时间</span></li>"+
+            "<li>作者投稿说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>作者福利说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>作者专区说明 <span class=\"fr\">2017-12-5</span></li>"+
+            "<li>章节审核标准 <span class=\"fr\">2017-12-5</span></li>"+
+            "</ul>"+
+            "</div>"+
+            "</div>"+
+            "</div>"
         })
         Vue.component('child3',{
-            template:`<div>
-                   <div class="contain_head">
-                    <a href="" class="shouye">首页</a>
-                    <span>&gt;</span>
-                    <a href="">作者专区</a>
-                    <span>&gt;</span>
-                    <span href="">消息管理</span>
-                </div>
-                <div class="author_xx contain_bg">
-                    <div class="biaoqian">
-                        <span>消息管理</span>
-                        <span class="biaoqian_line"></span>
-                        <a href="" class="fr">更多</a>
-                    </div>
-                    <div class="zp_list">
-                        <table>
-                            <tr>
-                                <th>标题</th>
-                                <th>时间</th>
-                                <th>是否已读</th>
-
-                            </tr>
-                            <tr>
-                                <td>章节审核驳回通知 <span></span></td>
-                                <td>2017-03-29 14:03:26</td>
-                                <td>已读 <span>√</span></td>
-                            </tr>
-                            <tr>
-                                <td>章节审核驳回通知 <span>▼</span></td>
-                                <td>2017-03-29 14:03:26</td>
-                                <td>为读 <span class="yidu"></span></td>
-                            </tr>
-                            <tr>
-                                <!--<td>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</td>-->
-                                <td colspan="3" nowrap style="padding: 0;">
-                                    <div class="author_tz">
-                                        <p>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</p>
-                                        <p>原因：扫红豆啊我全文。</p>
-                                        <p>请根据驳回理由修改后重新提交，给您带来不便，请谅解。</p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                    </div>`
+            template:"<div>"+
+            "<div class=\"contain_head\">"+
+            "<a href=\"\" class=\"shouye\">首页</a>"+
+            "<span>&gt;</span>"+
+            "<a href=\"\">作者专区</a>"+
+            "<span>&gt;</span>"+
+            "<span href=\"\">消息管理</span>"+
+            "</div>"+
+            "<div class=\"author_xx contain_bg\">"+
+            "<div class=\"biaoqian\">"+
+            "<span>消息管理</span>"+
+            "<span class=\"biaoqian_line\"></span>"+
+            "<a href=\"\" class=\"fr\">更多</a>"+
+            "</div>"+
+            "<div class=\"zp_list\">"+
+            "<table>"+
+            "<tr>"+
+            "<th>标题</th>"+
+            "<th>时间</th>"+
+            "<th>是否已读</th>"+
+            "</tr>"+
+            "<tr>"+
+            "<td>章节审核驳回通知 <span></span></td>"+
+            "<td>2017-03-29 14:03:26</td>"+
+            "<td>已读 <span>√</span></td>"+
+            "</tr>"+
+            "<tr>"+
+            "<td>章节审核驳回通知 <span>▼</span></td>"+
+            "<td>2017-03-29 14:03:26</td>"+
+            "<td>为读 <span class=\"yidu\"></span></td>"+
+            "</tr>"+
+            "<tr>"+
+            "<!--<td>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</td>-->"+
+            "<td colspan=\"3\" nowrap style=\"padding: 0;\">"+
+            "<div class=\"author_tz\">"+
+            "<p>尊敬的作者您好，您的作品：《修罗天帝》章节：第662章 做一回恶人审核未通过。</p>"+
+            "<p>原因：扫红豆啊我全文。</p>"+
+            "<p>请根据驳回理由修改后重新提交，给您带来不便，请谅解。</p>"+
+            "</div>"+
+            "</td>"+
+            "</tr>"+
+            "</table>"+
+            "</div>"+
+            "</div>"+
+            "</div>"
         })
         new Vue({
             el:".contain",
@@ -339,12 +339,18 @@
                 activeName:''
             },
             methods:{
-                toggle(v){
+                toggle:function (v) {
                     this.currentView=v;
                 },
-                selected(tab){
+                /*toggle(v){
+                    this.currentView=v;
+                },*/
+                selected:function (tab) {
                     this.activeName = tab.type;
-                }
+                },
+                /*selected(tab){
+                    this.activeName = tab.type;
+                }*/
             }
         })
         $(".contain dl:nth-child(1)").find("dd").slideToggle("slow");
