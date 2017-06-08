@@ -180,6 +180,18 @@ select{
     text-align:right;
     padding-right: 30px;
 }
+.tx_top{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 15px;
+}
+.shenhe{
+    color: green;
+    text-indent:2em;
+}
     /*通用样式end*/
 /*稿费table公用*/
 .gf_all{
@@ -214,9 +226,9 @@ h1{
     font-size: 26px;
 }
 .head_person{
-    width:160px ;
+    width:200px ;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 14px;
     display: table;
 }
 .head_person p{
@@ -227,11 +239,10 @@ h1{
 }
 .head_detail .line{
     width: 2px;
-    height: 30px;
+    height: 40px;
     display: inline-block;
     background: black;
-    vertical-align: middle;
-    display: table-cell;
+    margin-left: 10px;
 }
 /*作者中心内容部分*/
 
@@ -360,12 +371,71 @@ section{
     margin-left: 10px;
 }
 .contain .author_fabu{
+    display: inline-block;
     vertical-align: middle;
+    line-height: 40px;
+    text-align: center;
     width: 120px;
     height: 40px;
     color: white;
     background: #a1b7c9;
     cursor: pointer;
+}
+ .plus{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/Plus.png")no-repeat;
+    vertical-align: middle;
+}
+ .goback{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/back.png")no-repeat;
+     vertical-align: middle;
+ }
+ .ok{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/check.png")no-repeat;
+     vertical-align: middle;
+ }
+ .san_xia{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/san_xia.png")no-repeat;
+     vertical-align: middle;
+ }
+ .san_rt{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/san_rt.png")no-repeat;
+     vertical-align: middle;
+ }
+ .trash{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/Trash.png")no-repeat;
+     vertical-align: middle;
+ }
+ .pencil{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url("../img/Pencil.png")no-repeat;
+     vertical-align: middle;
+ }
+.note{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/Note.png")no-repeat;
+    vertical-align: middle;
 }
 .author_announcement .gg_neirong {
     width: 90%;
@@ -432,7 +502,7 @@ section{
 }
 .yidu{
     background: url("../img/head/icon_remind.png") no-repeat;
-    width: 9px;
+    width: 20px;
     height: 9px;
     display: inline-block;
 }
@@ -490,6 +560,7 @@ section{
 }
 .zjgl_xuanze .zjgl_show {
     margin-left: 40px;
+    margin-right: 4px;
 }
 .zjgl_line{
     display: inline-block;
@@ -501,8 +572,7 @@ section{
     vertical-align: middle;
 }
 .zjgl_xuanze a{
-    line-height: 16px;
-    height: 16px;
+
     color:#909fa9 ;
 }
 .zjgl_xuanze input{
@@ -520,6 +590,7 @@ section{
     width: 100%;
     height: 42px;
     line-height: 42px;
+    cursor: pointer;
 }
 .zp_list .zjgl_juan li a {
     float: right;
@@ -540,7 +611,19 @@ section{
 .zpgl_gf table{
     margin-top: 0;
 }
-
+.to_cgx,.to_tjzp{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 36px;
+    text-align: center;
+    height: 36px;
+    color: white;
+    background: #a1b7c9;
+    cursor: pointer;
+    margin-left: 30px;
+    color: white!important;
+    padding: 0 10px 0 10px;
+}
 /*修改章节*/
 .xgzj_detail{
     width: 92%;
@@ -589,6 +672,9 @@ section{
     width: 140px!important;
     height: 50px!important;;
     margin-left: 5%;
+}
+.upload .kexuan{
+    background: #a4a4a4!important;
 }
 .upload input:first-child{
     margin-left: 10%;

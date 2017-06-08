@@ -95,7 +95,7 @@
     <div class="contain">
         <aside>
             <dl>
-                <dt ><a href="index.html"><i class="zzzq"></i>作者专区</a></dt>
+                <dt><a href="index.html"><i class="zzzq"></i>作者专区</a></dt>
                 <dd>
                     <ul>
                         <li>作者中心</li>
@@ -109,9 +109,6 @@
 
                 <dt class="lf_active" ><a href="zpxg.html"><i class="ac_zpxg"></i>作品相关</a></dt>
                 <dd>
-                    <style>
-
-                    </style>
                     <ul>
                         <li><span class="dian"></span>作品列表</li>
                         <li><span class="dian"></span>申请签约</li>
@@ -180,7 +177,7 @@
                             <td>1322</td>
                             <td>连载中</td>
                             <td>签约上架</td>
-                            <td>已审核</td>
+                            <td class="shenhe">已审核 <i class="ok"></i> </td>
                             <td>作品管理</td>
                         </tr>
                     </table>
@@ -213,6 +210,12 @@
                             <td>1</td>
                             <td>修罗天帝</td>
                             <td>签约上架</td>
+                            <td>作品管理</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>修罗天帝</td>
+                            <td class="shenhe">已签约 <i class="ok"></i> </td>
                             <td>作品管理</td>
                         </tr>
                     </table>
@@ -296,11 +299,6 @@
 <script>
     $(function () {
         $(".contain dl:nth-child(2)").find("dd").slideToggle("slow");
-        $(".contain dl:nth-child(2) dd li").click(function (){
-            var zpindex = $(this).index();
-            $("section").css("display","none").eq(zpindex).css("display","inline-block");
-
-        })
     })
 
 </script>

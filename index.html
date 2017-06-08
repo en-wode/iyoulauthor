@@ -25,7 +25,7 @@
         <!--头部组合-->
         <div class="head_bg">
             <div class="head_detail">
-                <h1 class="fl">有乐-作者中心</h1>
+                <h1 class="fl"> <span style="color: red">有乐</span> • 作者中心</h1>
                 <div class="head_person fr">
                     <div style=" vertical-align: middle;display: table-cell;width: 10px;height: 10px">
                         <img src="img/head/__icon_u9.png" alt="" >
@@ -34,8 +34,11 @@
                     <div style="display: table-cell;vertical-align: top;">
                         <img src="img/head/icon_remind.png" alt="" >
                     </div>
-                    <span></span>
                     <span class="line"></span>
+                    <div style=" vertical-align: middle;display: table-cell;width: 40px;height: 40px">
+                        <img src="img/head/biaozhun.gif" alt="" style="width: 40px;height: 40px ;border:none"  class="tx_top">
+                    </div>
+
                     <p style="width: 80px">踏雪无痕</p>
                 </div>
             </div>
@@ -193,7 +196,7 @@
             "<p class=\"author_name\">踏雪无痕</p>"+
             "<p>今天是2017年5月17日，星期三，本月已更新0天，共计更新0字</p>"+
             "</div>"+
-            "<input type=\"button\" value=\"发布作品\" class=\"author_fabu\">"+
+            "<a   class=\"author_fabu\"><i class=\"plus\"></i>发布作品</a>"+
             "</div>"+
             "<div class=\"author_announcement\">"+
             "<div class=\"biaoqian\">"+
@@ -232,7 +235,7 @@
             "<td>1322</td>"+
             "<td>连载中</td>"+
             "<td>签约上架</td>"+
-            "<td>已审核</td>"+
+            "<td class=\"shenhe\">已审核 <i class=\"ok\"></ic> </td>"+
             "<td>作品管理</td>"+
             "</tr>"+
             "</table>"+
@@ -292,7 +295,7 @@
             "<tr>"+
             "<td>章节审核驳回通知 <span></span></td>"+
             "<td>2017-03-29 14:03:26</td>"+
-            "<td>已读 <span>√</span></td>"+
+            "<td>已读 <i class='ok'></i></td>"+
             "</tr>"+
             "<tr>"+
             "<td>章节审核驳回通知 <span>▼</span></td>"+
@@ -342,23 +345,13 @@
                 toggle:function (v) {
                     this.currentView=v;
                 },
-                /*toggle(v){
-                    this.currentView=v;
-                },*/
                 selected:function (tab) {
                     this.activeName = tab.type;
                 },
-                /*selected(tab){
-                    this.activeName = tab.type;
-                }*/
             }
         })
         $(".contain dl:nth-child(1)").find("dd").slideToggle("slow");
-        $(".contain dl:nth-child(1) dd li").mouseover(function () {
-            var ctop = $(this).index()+1;
-            $(".check").css("top",ctop*50);
-            console.log($(this).index());
-        })
+
     }
 </script>
 </html>

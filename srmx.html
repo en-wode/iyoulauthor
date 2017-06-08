@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
 <style>
 .skxx_contain{
@@ -377,9 +378,9 @@
                         <option value="">12月</option>
                     </select>
                 </div>
-                <div class="zp_list">
+                <div class="zp_list bt">
                     <h3>《修罗天帝》2月预付稿费记录</h3>
-                    <table>
+                    <table style="margin-top: 0">
                         <tr>
                             <th>日期</th>
                             <th>书号</th>
@@ -479,16 +480,7 @@
 </body>
 <script>
     $(function () {
-        alert(1)
-        $(".contain dl:nth-child(4)").click(function () {
-            alert(1)
-        })
         $(".contain dl:nth-child(4)").find("dd").slideToggle("slow");
-        $(".contain dl:nth-child(4) dd li").click(function (){
-            var zpindex = $(this).index();
-            $("section").css("display","none").eq(zpindex).css("display","inline-block");
-
-        })
     })
 </script>
 </html>
