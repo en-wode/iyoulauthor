@@ -84,7 +84,7 @@
             </dl>
 
         </aside>
-        <section class="zplb" style="display:none ">
+        <section class="zplb" style="display: ">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -95,7 +95,17 @@
             </div>
             <div class="contain_bg zpgl_contain">
                 <div class="biaoqian">
-                    <span>作品信息管理</span>
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
                     <span class="biaoqian_line"></span>
                     <select name="" id="" class="fr">
                         <option>逍遥小太监</option>
@@ -129,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <section class="zjgl" style="display: ">
+        <section class="zjgl" style="display: none">
             <!--公告头部-->
             <div class="contain_head">
                 <a href="" class="shouye">首页</a>
@@ -166,52 +176,52 @@
                                 <span></span>
                             </li>
                             <li>
-                                <i class="san_xia"></i>
+                                <i class="san_rt"></i>
                                 <span>第一卷  修罗子</span>
-                                <a href=""><i class="trash"></i>删除本卷</a>
+                                <a href="javascript:void(0);" class="kill"><i class="trash"></i>删除本卷</a>
                                 <span class="zjgl_line fr"></span>
                                 <a href=""><i class="pencil"></i>修改标题和卷简介</a>
-
+                                <ul style="display: none">
+                                    <li class="zjgl_zhang">
+                                        <input type="checkbox" style="vertical-align: middle;">
+                                        <span>第一卷  修罗子</span>
+                                        <a>26310字</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a>2017-01-05 11:30</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="javascript:void(0);" class="kill">删除</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="javascript:void(0);">修改</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="">增加</a>
+                                    </li>
+                                    <li class="zjgl_zhang">
+                                        <input type="checkbox" >
+                                        <span>第一卷  修罗子</span>
+                                        <a>26310字</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a>2017-01-05 11:30</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="javascript:void(0);" class="kill">删除</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="javascript:void(0);">修改</a>
+                                        <span class="zjgl_line fr"></span>
+                                        <a href="">增加</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <ul>
-                                <li class="zjgl_zhang">
-                                    <input type="checkbox" style="vertical-align: middle;">
-                                    <span>第一卷  修罗子</span>
-                                    <a>26310字</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a>2017-01-05 11:30</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">删除</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">修改</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">增加</a>
-                                </li>
-                                <li class="zjgl_zhang">
-                                    <input type="checkbox" >
-                                    <span>第一卷  修罗子</span>
-                                    <a>26310字</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a>2017-01-05 11:30</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">删除</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">修改</a>
-                                    <span class="zjgl_line fr"></span>
-                                    <a href="">增加</a>
-                                </li>
-                            </ul>
+
                             <li>
                                 <i class="san_rt"></i>
                                 <span>第二卷  修罗子</span>
-                                <a href=""><i class="trash"></i>删除本卷</a>
+                                <a href="javascript:void(0);" class="kill"><i class="trash"></i>删除本卷</a>
                                 <span class="zjgl_line fr"></span>
                                 <a href=""><i class="pencil"></i>修改标题和卷简介</a>
                             </li>
                             <li>
                                 <i class="san_rt"></i>
                                 <span>第三卷  修罗子</span>
-                                <a href=""><i class="trash"></i>删除本卷</a>
+                                <a href="javascript:void(0);" class="kill"><i class="trash"></i>删除本卷</a>
                                 <span class="zjgl_line fr"></span>
                                 <a href=""><i class="pencil"></i>修改标题和卷简介</a>
                             </li>
@@ -658,6 +668,256 @@
                 </div>
             </div>
         </section>
+        <section class="xgjj" style="display: none">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+                <span>&gt;</span>
+                <span href="">修改简介</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="xgzj_detail bt">
+                    <h3>修罗天帝修改简介：</h3>
+                    <textarea name="" id="" cols="30" rows="18" style="width: 610px;display: block;"></textarea>
+                    <input type="button" value="保存" class="gl_save">
+                </div>
+            </div>
+        </section>
+        <section class="fmtj" style="display: none">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+                <span>&gt;</span>
+                <span href="">作者的话</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="xgzj_detail bt">
+                    <h3>《修罗天帝》封面页推荐位管理</h3>
+                    <div class="tip_bg" style="width: auto">
+                        <p>您可以在本书的封面推荐其他小说，填写以英文逗号分隔的书号，如：40287,4521，最多推荐5本</p>
+                    </div>
+                    您要推荐的书号：<input type="text" style="border: 1px solid #e0e7ea;padding: 4px">
+                    <p style="margin-top: 20px">您目前推荐的书籍：<span> 女神的布衣兵王</span>，<span>绝世飞刀</span>，<span>我的冰山美女老婆</span>，<span>天才高手</span>，<span>太古剑神</span></p>
+                    <input type="button" class="gl_save" value="保存">
+                </div>
+            </div>
+        </section>
+        <section class="zzdh" style="display: none">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+                <span>&gt;</span>
+                <span href="">作者的话</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="xgzj_detail bt">
+                    <h3>作者的话：</h3>
+                    <textarea name="" id="" cols="30" rows="18" style="width: 610px;display: block;"></textarea>
+                    <input type="button" value="保存" class="gl_save">
+                </div>
+            </div>
+        </section>
+        <section class="zpbq" style="display: none">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+                <span>&gt;</span>
+                <span href="">作品标签管理</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="xgzj_detail bt">
+                    <h3>《修罗天帝》作品标签修改</h3>
+                    <div class="tip_bg" style="width: auto">
+                        <p>作品标签用于表标识您的作品的情节特征，任务主角名等，准确和有意义的标签可以用目标读者更方便找到您的作品，
+                            所以请尽量仔细构思标签，同时您也可以使用系统统计的当前类别最常用标签，点击常用标签后的+号就可以添加，
+                            每单个标签长度不允许超过4个中文字，总长度不允许超过100个子</p>
+                    </div>
+                    <div class="xgbq">
+                        <span>天帝 <a href=""></a></span>
+                        <span>热血<a href=""></a></span>
+                        <span>激情<a href=""></a></span>
+                        <span>玄幻<a href=""></a></span>
+                        <span>武神风暴<a href=""></a></span>
+                        <span>战神年代<a href=""></a></span>
+                        <span>
+                            <input type="text" class="tjbq" placeholder="点击添加标签">
+                            <a href=""></a>
+                        </span>
+
+                    </div>
+                    <input type="button" class="gl_save" value="保存" >
+                </div>
+            </div>
+        </section>
+        <section class="zptp" style="display: none">
+            <div class="contain_head">
+                <a href="" class="shouye">首页</a>
+                <span>&gt;</span>
+                <a href="">作品管理</a>
+                <span>&gt;</span>
+                <span href="">作品信息管理</span>
+                <span>&gt;</span>
+                <span href="">作品投票调查</span>
+            </div>
+            <div class="contain_bg">
+                <div class="biaoqian">
+                    <span onclick="show('zjgl')">封面上传</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('xgjj')">修改简介</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zzdh')">修改作者的话</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('fmtj')">封面推荐位管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zpbq')">作品标签管理</span>
+                    <span class="biaoqian_line"></span>
+                    <span onclick="show('zptp')">作品投票调查</span>
+                    <span class="biaoqian_line"></span>
+                    <select name="" id="" class="fr">
+                        <option>逍遥小太监</option>
+                        <option>逍遥大太监</option>
+                        <option>逍遥老太监</option>
+                    </select>
+                </div>
+                <div class="xgzj_detail bt">
+                    <h3>对《修罗天帝》发起作品调查</h3>
+                    <div class="tip_bg" style="width: auto">
+                        <p>温馨提示：调查选项至少写俩个，最多写四个</p>
+                    </div>
+                    <div class="biaoqian">
+                        <span>调查类型</span>
+                        <span style="margin-left: 24px">单选</span>
+                        <span class="biaoqian_line" style="margin-left: 24px"></span>
+                        <span style="margin-left: 24px">多选</span>
+                    </div>
+                    <style>
+                        .zptpxx span{
+                            display: inline-block;
+                            width: 100px;
+                        }
+                        .zptpxx input{
+                            width: 270px;
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                        .zptpxx a{
+                            display: inline-block;
+                            margin-left: 200px;
+                        }
+                    </style>
+                    <div class="fl_contain zp_list">
+                        <form action="" class="zptpxx">
+                            <ul>
+                                <li>
+                                    <span>主题：</span>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <span>选项1：</span>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <span>选项2：</span>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="tjxx">点击添加选项</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <input type="button" class="gl_save" value="保存" >
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 </body>
@@ -666,10 +926,18 @@
         $(".contain dl:nth-child(4)").find("dd").slideToggle("slow");
         $(".zjgl_juan>>li").each(function () {
             $(this).click(function () {
+                /*var a = false;
+                if(a){
+                    $(this).find("i:first-child").css("background","url(img/san_rt.png)no-repeat");
+                    a = false
+                }else {
+                    $(this).find("i:first-child").css("background","url(img/san_xia.png)no-repeat");
+                    a = true
+                }*/
+                $(this).find("ul").show(500);
                 $(this).after("");
             })
         })
-
     })
 </script>
 </html>

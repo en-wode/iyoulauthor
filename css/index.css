@@ -44,9 +44,6 @@ input[type="checkbox"]{
 .active{
     background: white;
     color: black;
-    border-radius: 22px 0 0 22px;
-    -moz-border-radius:22px 0 0 22px; /* Firefox */
-    -webkit-border-radius: 22px 0 0 22px;
 }
 aside a{
     display: inline-block;
@@ -74,13 +71,14 @@ aside li{
 }
 .biaoqian span{
     display: inline-block;
+    cursor: pointer;
 }
 .biaoqian_line{
     width: 2px;
     background: #e0e7ea;
-    margin-left:6px ;
-    height: 26px;
-
+    margin-left: 10px;
+    height: 19px;
+    margin-right: 10px;
 }
 .biaoqian span ,.biaoqian a ,.biaoqian select{
     line-height: 26px;
@@ -138,7 +136,6 @@ table td{
 }
 .bt h3,.bt span{
     line-height: 42px ;
-    height: 42px;
 }
 .time{
     width: 92%;
@@ -240,10 +237,11 @@ h1{
 }
 .head_detail .line{
     width: 2px;
-    height: 40px;
+    height: 30px;
     display: inline-block;
-    background: black;
+    background: #a09c9c;
     margin-left: 10px;
+    margin-top: 5px;
 }
 /*作者中心内容部分*/
 
@@ -355,7 +353,7 @@ section{
     width: 84px;
     height: 84px;
     margin-left: 30px;
-    border: 1px solid black;
+    border: 1px solid #e0e7ea;
     border-radius: 42px;
     vertical-align: middle;
     margin-top: 18px;
@@ -451,7 +449,15 @@ section{
     line-height: 45px;
     border-bottom: 1px solid #e0e7ea;
 }
-
+.check{
+    width: 205px;
+    height: 50px;
+    background: white;
+    opacity: 0.9;
+    position: absolute;
+    top:50px;
+    z-index: -1;
+}
 /*作者中心内容部分end*/
 
 /*作者公告管理*/
@@ -589,7 +595,7 @@ section{
 }
 .zp_list .zjgl_juan ul li{
     width: 100%;
-    height: 42px;
+    /*height: 42px;*/
     line-height: 42px;
     cursor: pointer;
 }
@@ -625,6 +631,43 @@ section{
     color: white!important;
     padding: 0 10px 0 10px;
 }
+.gl_save{
+    width: 200px!important;
+    margin:50px auto;
+    height: 40px!important;
+    display: block;
+}
+.xgbq{
+    width: 100%;
+    height: auto;
+    border: 1px solid #a1b7c9;
+}
+.xgbq span{
+    margin:12px 25px 10px 10px;
+    display: inline-block;
+    width: 115px;
+    height: 28px;
+    background: #e0e7ea;
+    text-align: center;
+    line-height: 28px;
+}
+.xgbq span:last-child{
+    background: none;
+}
+.xgbq a{
+    background: url(../img/XX.png)no-repeat;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.xgbq .tjbq{
+    width: 80px;
+    margin-left:10px;
+}
+/*章节管理end*/
 /*修改章节*/
 .xgzj_detail{
     width: 92%;
@@ -642,7 +685,7 @@ section{
     height: 1200px!important;
 }
 .xgzj_detail p{
-    height: 30px;
+    /*height: 30px;*/
     line-height: 30px;
 }
 .xgzj_detail ul li span{
@@ -654,7 +697,6 @@ section{
     padding-left: 8px;
 }
 .xgzj_detail input[type="button"]{
-    margin-right: 20px;
     height: 30px;
     width: 100px;
     background: #3d474d;
@@ -703,3 +745,111 @@ section{
 
 }
 /*修改章节end*/
+/*收款资料*/
+.skxx_contain{
+    height: 860px!important;
+}
+.skxx .skxx_detail{
+    width: 70%;
+    margin: 0 auto;
+}
+.skxx .skxx_detail ul{
+    margin-top: 20px;
+}
+.skxx .skxx_detail ul li{
+    height: 45px;
+    list-style: none;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+.skxx .skxx_detail ul li span{
+    font-family: "黑体";
+    width: 100px;
+    display: inline-block;
+}
+.skxx .skxx_detail ul li input{
+    text-indent:2em;
+    width:360px ;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e0e7ea;
+}
+.skxx .skxx_detail ul .zl_save{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+    background: #3d474d;
+    color: white;
+}
+/*收款资料*/
+/*订阅 红包*/
+.dy_total{
+    width:92% ;
+    height:117px ;
+    margin: 25px auto;
+}
+.dy_total .lf_dy{
+    width:34.8% ;
+    height: 100%;
+    float: left;
+}
+.dy_total .lf_dy p:first-child{
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    height: 60px ;
+    background: #87b6db;
+    color: white;
+    font-size: 20px;
+}
+.dy_total .lf_dy p:last-child{
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    height: 50px ;
+    background: #6594b9;
+    color: white;
+    font-size: 14px;
+}
+.dy_total .lf_dy p span{
+    width: 49%;
+    display: inline-block;
+}
+.dy_total .rt_dy{
+    margin-left: 20px;
+    width:58.8% ;
+    height: 100%;
+    float: right;
+}
+.dy_total .rt_dy p:first-child{
+    text-align: center;
+    line-height:45px;
+    width: 100%;
+    height: 45px ;
+    background: #619d63;
+    color: white;
+    font-size: 16px;
+}
+.dy_total .rt_dy p span{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.dy_total .rt_dy p:last-child{
+    text-align: center;
+    line-height:65px;
+    width: 100%;
+    height: 65px ;
+    background: #7eca82;
+    color: white;
+    font-size: 16px;
+}
+.dy_total .dy_line{
+    display: inline-block;
+    width: 2px!important;
+    background: white;
+    height: 36px;
+    vertical-align: middle;
+}
