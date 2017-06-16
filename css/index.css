@@ -244,7 +244,26 @@ h1{
     margin-top: 5px;
 }
 /*作者中心内容部分*/
-
+.guanli_select{
+    position: relative;
+}
+.guanli{
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 100%;
+    border:1px solid #e0e7ea;
+}
+.guanli{
+    box-shadow: 5px 5px 5px #888888;
+}
+.guanli li{
+    background: white;
+    list-style: none;
+    height: 32px;
+    border-bottom:1px solid #e0e7ea;
+    line-height: 32px;
+}
 .contain{
     width:60% ;
     margin: 20px auto;
@@ -503,6 +522,19 @@ section{
 /*消息管理end*/
 
 /*作品管理*/
+.zptpxx span{
+    display: inline-block;
+    width: 100px;
+}
+.zptpxx input{
+    width: 270px;
+    height: 32px;
+    line-height: 32px;
+}
+.zptpxx a{
+    display: inline-block;
+    margin-left: 200px;
+}
 .author_xx table th:first-child,.author_xx table td:first-child{
     text-align: left;
     padding-left: 10px;
