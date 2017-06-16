@@ -178,9 +178,26 @@
                             <td>连载中</td>
                             <td>签约上架</td>
                             <td class="shenhe">已审核 <i class="ok"></i> </td>
-                            <td>作品管理</td>
+                            <td>
+                                <style>
+
+                                </style>
+                                <div class="guanli_select">
+                                    作品管理<span>▼</span>
+                                    <ul class="guanli" style="display: none">
+                                        <li>作品信息管理</li>
+                                        <li>章节管理</li>
+                                        <li>书评管理</li>
+                                    </ul>
+                                </div>
+                            </td>
                         </tr>
                     </table>
+                    <script>
+                        $(".guanli_select").click(function () {
+                            $(this).find(".guanli").slideToggle()
+                        })
+                    </script>
                 </div>
             </div>
         </section>
@@ -216,7 +233,7 @@
                             <td>1</td>
                             <td>修罗天帝</td>
                             <td class="shenhe">已签约 <i class="ok"></i> </td>
-                            <td>作品管理</td>
+                            <td>作品管理<span>▼</span></td>
                         </tr>
                     </table>
                 </div>
